@@ -7,15 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class ProfileFragment extends android.support.v4.app.Fragment {
+public class DiscoverFragment extends android.support.v4.app.Fragment {
 
-    private static final String TAG = "ProfileFragment";
+    private static final String TAG = "DiscoverFragment";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return inflater.inflate(R.layout.fragment_discover, container, false);
     }
 
     @Override
@@ -27,7 +27,6 @@ public class ProfileFragment extends android.support.v4.app.Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-
         Log.i(TAG, "DESTROYED");
     }
 
@@ -36,6 +35,5 @@ public class ProfileFragment extends android.support.v4.app.Fragment {
         super.onDestroyView();
         Log.i(TAG, "DESTROYED VIEW");
     }
-
 
 }

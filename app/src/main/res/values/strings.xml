@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">CoralandPearls</string>
-    <string name="title_candidates">Candidates</string>
-    <string name="title_connections">Connections</string>
-    <string name="title_profile">Profile</string>
+    <string name="app_name">Coral and Pearls</string>
+    <string name="title_discover_fragment">Discover</string>
+    <string name="title_connections_fragment">Connections</string>
+    <string name="title_profile_fragment">Profile</string>
     <string name="facebook_app_id">295302177626576</string>
     <string name="fb_login_protocol_scheme">fb295302177626576</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

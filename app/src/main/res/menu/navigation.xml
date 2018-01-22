@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_candidates"
+        android:id="@+id/navigation_discover"
         android:icon="@drawable/ic_hand_black_24dp"
-        android:title="@string/title_candidates" />
+        android:title="@string/title_discover_fragment" />
 
     <item
         android:id="@+id/navigation_connections"
         android:icon="@drawable/ic_heart_black_24dp"
-        android:title="@string/title_connections" />
+        android:title="@string/title_connections_fragment" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_person_black_24dp"
-        android:title="@string/title_profile" />
+        android:title="@string/title_profile_fragment" />
 
 </menu>
