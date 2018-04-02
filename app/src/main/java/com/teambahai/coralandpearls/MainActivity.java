@@ -1,13 +1,15 @@
 package com.teambahai.coralandpearls;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.app.Fragment;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,12 +24,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         userID = getIntent().getStringExtra("USER_ID");
 
-        android.support.v4.app.Fragment initial_fragment = new DiscoverFragment();
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.fragment_container_main, initial_fragment).commit();
+        Fragment initial_fragment = new ConnectionsFragment();
+        getFragmentManager().beginTransaction().add(R.id.fragment_container_main, initial_fragment).commit();
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -36,23 +38,23 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-            android.support.v4.app.Fragment active_fragment;
+            Fragment active_fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_discover:
                     active_fragment = new DiscoverFragment();
-                    getSupportFragmentManager().beginTransaction()
+                    getFragmentManager().beginTransaction()
                             .replace(R.id.fragment_container_main, active_fragment).commit();
                     return true;
 
                 case R.id.navigation_connections:
                     active_fragment = new ConnectionsFragment();
-                    getSupportFragmentManager().beginTransaction()
+                    getFragmentManager().beginTransaction()
                             .replace(R.id.fragment_container_main, active_fragment).commit();
                     return true;
 
                 case R.id.navigation_profile:
                     active_fragment = new ProfileFragment();
-                    getSupportFragmentManager().beginTransaction()
+                    getFragmentManager().beginTransaction()
                             .replace(R.id.fragment_container_main, active_fragment).commit();
                     return true;
             }

@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
-        app:itemBackground="@color/colorPrimary"
+        app:itemBackground="@color/colorAccent"
         app:itemIconTint="@drawable/selector_nav_view_main"
         app:itemTextColor="@drawable/selector_nav_view_main"
         app:layout_constraintBottom_toBottomOf="parent"
