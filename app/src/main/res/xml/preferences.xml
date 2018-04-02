@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <MultiSelectListPreference
+        android:key="pref_gender"
+        android:title="@string/pref_gender"/>
+    <EditTextPreference
+        android:key="pref_birthday"
+        android:title="Birthday"/>
+    <EditTextPreference
+        android:key="pref_education"
+        android:title="Where did you go to school?"/>
+    <EditTextPreference
+        android:key="pref_employment"
+        android:title="Where do you work?"/>
+    <SwitchPreference
+        android:key="pref_married"
+        android:title="Have you ever been married?"/>
+    <SwitchPreference
+        android:key="pref_children"
+        android:title="Do you have any children?"/>
+    <EditTextPreference
+        android:key="pref_beliefs"
+        android:title="What is your religious belief?"/>
+    <MultiSelectListPreference
+        android:key="pref_sexual_preference"
+        android:title="I am interested in..."/>
+    <EditTextPreference
+        android:key="pref_min_age"
+        android:title="Between the age of..."/>
+    <EditTextPreference
+        android:key="pref_max_age"
+        android:title="And..."/>
+    <EditTextPreference
+        android:key="pref_distance"
+        android:title="Within a distance of..."/>
+    <SwitchPreference
+        android:key="pref_children"
+        android:title="Do you accept someone with children?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="How well do you think you know yourself?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="How extroverted vs introverted are you?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="How organized vs flexible are you?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="When my friend is having a difficult time, I would..."/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="When I am having a difficult time, I would like my friends to..."/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="When spending time with my significant other, I like to be..."/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="How important is religion/God in your life?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="How important is helping others to you?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="How taboo is sex outside of marriage to you?"/>
+    <SwitchPreference
+        android:key="pref_children"
+        android:title="Do you smoke cigarettes?"/>
+    <SwitchPreference
+        android:key="pref_children"
+        android:title="Do you drink alcohol?"/>
+    <SwitchPreference
+        android:key="pref_children"
+        android:title="Do you take recreational drugs?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="Which virtues best describe you?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="Which virtues are most important to you in a partner?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="Which types of services sound most exciting to you?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="Which social issues are most important to you?"/>
+    <EditTextPreference
+        android:key="pref_self_knowledge"
+        android:title="What are your five favorite things to do with your free time?"/>
+
+</PreferenceScreen>
